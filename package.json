@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage":"https://github.com/Adimaxx910/Course_Selection.git",
+  "homepage":"http://Adimaxx910.github.io/Course_Selection",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
