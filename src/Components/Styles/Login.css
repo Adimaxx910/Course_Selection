@@ -1,0 +1,102 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  }
+  
+  .auth-box {
+    width: 300px;
+    background-color: rgb(29, 47, 63);
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .auth-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .auth-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .auth-heading {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+    color: #6d839a;
+  }
+  
+  .auth-heading.active {
+    border-color: #007bff;
+    color: #fef7f7;
+  }
+  
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #fbf2f2;
+      }
+    
+      input {
+        color: #040c14 !important; 
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+       
+      }
+    
+      input:focus {
+        border-color: #007bff;
+      }
+    
+      .forgot-password {
+        margin-bottom: 15px;
+        color: #007bff;
+        font-size: 14px;
+        text-align: right;
+        transition: color 0.3s ease;
+
+    }
+    .forgot-password a{
+     
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    
+        &:hover {
+            color: rgb(239, 160, 64);
+        }
+          
+    }
+  
+    .button {
+      
+        width: 100%;
+        padding: 10px !important;
+        background-color: rgb(0, 0, 59) !important;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-weight: bolder !important;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: #3b47f9 !important;
+            color: #040c14;
+        }
+    }
+      
+      

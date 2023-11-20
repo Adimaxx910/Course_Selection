@@ -1,0 +1,127 @@
+.slider-container {
+    width: 95%;
+    
+    margin: 20px auto;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    height: 80vh;
+    border-radius: 25px; 
+  }
+  
+  .content-container {
+   
+    padding: 40px 0;
+    overflow: hidden;
+    /* border-top: 3px solid rgb(240, 225, 225);
+    margin-top: 5%; */
+  }
+  
+  .content-section {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    animation: fadeInUp 1s ease; /* Add fadeInUp animation */
+    margin-bottom: 8%; /* Add space between content sections */
+    border-bottom: 2px solid wheat;
+  }
+  
+  .left .content-image,
+  .right .content-image {
+    width: 30%; /* Adjust the width of the image */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .left .content-text,
+  .right .content-text {
+    flex: 1;
+    padding: 0 20px 20px 20px;
+    text-align: left;
+    top: 0;
+    font-size: larger;
+  }
+  
+  .content-image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .content-image:hover img {
+    transform: scale(1.1);
+  }
+
+  .content-text h2 {
+    color: #fdfdfd;
+    font-weight: bold;
+  }
+  
+  .content-text p {
+    color: #fffdfd;
+    font-size: 16px;
+    margin-bottom: 2%;
+  }
+  
+  .read-more-button {
+    background-color: #007bff;
+    color: rgb(229, 218, 0);
+    padding: 7px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add animations here */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add animations for the text reveal */
+  .content-container.active .content-text p span {
+    animation: revealWord 0.5s ease both;
+  }
+  
+  @keyframes revealWord {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply the animation when the content container is in view */
+  .content-container.active {
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  /* Adjust the animation delay for each word */
+  .content-container.active .content-text p span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .content-container.active .content-text p span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .content-container.active .content-text p span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  

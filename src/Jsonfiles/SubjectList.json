@@ -1,0 +1,29 @@
+{
+    "subjects": [
+      {
+        "id": 1,
+        "name": "PYTHON",
+        "price": "$19.99 ",
+        "description": "Lorem ipsum tur.",
+        "demolink": "https://www.youtube.com/embed/pewShW9GqTM?si=kvYi0359eBvi0AiH"
+        
+      },
+      {
+        "id": 2,
+        "name": "JAVA",
+        "price": "$39.99 ",
+        "description": " Suspendisse rutrum elementum l",
+        "demolink": "https://www.youtube.com/embed/pewShW9GqTM?si=kvYi0359eBvi0AiH"
+       
+      },
+      {
+        "id": 3,
+        "name": "SQL",
+        "price": "$30.99 ",
+        "description": "Lorem ipsum dolor sit amet, con",
+        "demolink": "https://www.youtube.com/embed/pewShW9GqTM?si=kvYi0359eBvi0AiH"
+        
+      } 
+    ]
+  }
+ 
