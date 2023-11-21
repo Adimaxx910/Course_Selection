@@ -1,9 +1,10 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes,Route} from "react-router-dom";
-import Header from '../Components/Common/Header';
 import AuthComponent from '../Components/Login';
 import SubjectPage from '../Components/SubjectPage';
 import Home from '../Components/Home';
+import Videodisplay from '../Components/Videodisplay';
+import ContactUs from '../Components/ContactMe';
 const AppRouter = () => {
   return (
     <Router>
@@ -12,6 +13,8 @@ const AppRouter = () => {
         <Route path="/Subjects" element={<SubjectPage/>} />
         <Route path="/Home" element={<Home/>} />
         <Route path="/" element={<Home/>} />
+        <Route path="/videos" element={<Videodisplay/>} />
+        <Route path="/contact" element={<ContactUs/>} />
       </Routes>
     </Router>
   );

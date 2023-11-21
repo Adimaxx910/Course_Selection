@@ -1,0 +1,48 @@
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  .first-video {
+    width: 100%;
+    margin-bottom: 20px;
+    /* border-bottom: 2px solid wheat; */
+  }
+  .first-video  p{
+    text-align: center;
+    font-size: medium;
+    background-color: rgb(25, 33, 30);
+  }
+  .first-video span{
+    font-size: large;
+    font-weight: 600;
+    color: bisque;
+   
+   
+  }
+  .first-video iframe{
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .other-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .small-video {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .small-video iframe {
+    width: 200px;
+    height: 150px;
+  }
+  
+  .small-video h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(14, 13, 13);
+  }
+  

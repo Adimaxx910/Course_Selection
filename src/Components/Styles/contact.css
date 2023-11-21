@@ -1,0 +1,69 @@
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    color: rgb(246, 234, 234);
+    padding: 20px;
+    background-color: #1c0633;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(106, 103, 103, 0.1);
+  }
+  
+  .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 2%;
+  }
+  
+  .profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    text-align: center;
+  }
+  
+  .right-content {
+    flex: 1;
+    background-color: rgb(13, 18, 16);
+    padding-left: 3%;
+  }
+  
+  .right-content h2 {
+    color: rgb(2, 132, 39);
+    font-size: larger;
+    margin: 0;
+    font-weight: 700;
+  }
+  
+  .right-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .right-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  .right-content h2,
+  .right-content p {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .left-section,
+    .right-section {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
